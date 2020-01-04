@@ -1,0 +1,11 @@
+version: '2'
+services:
+  tabrestapiv6-postgresql:
+    image: postgres:11.6
+    # volumes:
+    #     - ~/volumes/jhipster/TabRestApiV6/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=TabRestApiV6
+      - POSTGRES_PASSWORD=
+    ports:
+      - 5432:5432
